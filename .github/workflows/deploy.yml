@@ -15,4 +15,4 @@ jobs:
       - name: Run deploy script
         run: |
           echo "Starting deploy..."
-          /usr/bin/check.sh
+          ./check.sh
