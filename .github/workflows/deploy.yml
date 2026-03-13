@@ -1,0 +1,18 @@
+name: Deploy Action
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run deploy script
+        run: |
+          echo "Starting deploy..."
+          check.sh
